@@ -67,3 +67,11 @@ preview(A12, viewer='file', filename="A12.png", dvioptions=['-D','300'])
 preview(A23, viewer='file', filename="A23.png", dvioptions=['-D','300'])
 preview(A03_simplify, viewer='file', filename="A03_simplify.png", dvioptions=['-D','300'])
 preview(A02_simplify, viewer='file', filename="A02_simplify.png", dvioptions=['-D','300'])
+
+#...[ADD AT THE END OF THE SCRIPT]...
+
+# Added for IK
+A02 = A01 * A12
+A02_simplify = trigsimp(A02)
+preview(A02, viewer='file', filename="A02.png", dvioptions=['-D','300'])
+preview(A02_simplify, viewer='file', filename="A02_simplify.png", dvioptions=['-D','300'])
